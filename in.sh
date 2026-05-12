@@ -158,9 +158,11 @@ install_XrayR() {
     ln -sf /usr/bin/XrayR /usr/bin/xrayr
     chmod +x /usr/bin/xrayr
 
+chmod +x /usr/bin/xrayr
+
     cd $cur_dir
     # 清理安装脚本（可选）
-     rm -f install.sh
+    # rm -f install.sh
 
     echo -e ""
     echo "XrayR 管理脚本使用方法 (兼容使用xrayr执行，大小写不敏感): "
@@ -180,9 +182,6 @@ install_XrayR() {
     echo "XrayR uninstall          - 卸载 XrayR"
     echo "XrayR version            - 查看 XrayR 版本"
     echo "------------------------------------------"
-}
-    cd $cur_dir
-    echo -e "${green}脚本执行完成。${plain}"
 }
 
 echo -e "${green}开始安装流程${plain}"
