@@ -156,7 +156,31 @@ install_XrayR() {
     curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/azsxza1/x/refs/heads/main/XrayR.sh
     chmod +x /usr/bin/XrayR
     ln -sf /usr/bin/XrayR /usr/bin/xrayr
-    
+    chmod +x /usr/bin/xrayr
+
+    cd $cur_dir
+    # 清理安装脚本（可选）
+     rm -f install.sh
+
+    echo -e ""
+    echo "XrayR 管理脚本使用方法 (兼容使用xrayr执行，大小写不敏感): "
+    echo "------------------------------------------"
+    echo "XrayR                    - 显示管理菜单 (功能更多)"
+    echo "XrayR start              - 启动 XrayR"
+    echo "XrayR stop               - 停止 XrayR"
+    echo "XrayR restart            - 重启 XrayR"
+    echo "XrayR status             - 查看 XrayR 状态"
+    echo "XrayR enable             - 设置 XrayR 开机自启"
+    echo "XrayR disable            - 取消 XrayR 开机自启"
+    echo "XrayR log                - 查看 XrayR 日志"
+    echo "XrayR update             - 更新 XrayR"
+    echo "XrayR update x.x.x       - 更新 XrayR 指定版本"
+    echo "XrayR config             - 显示配置文件内容"
+    echo "XrayR install            - 安装 XrayR"
+    echo "XrayR uninstall          - 卸载 XrayR"
+    echo "XrayR version            - 查看 XrayR 版本"
+    echo "------------------------------------------"
+}
     cd $cur_dir
     echo -e "${green}脚本执行完成。${plain}"
 }
