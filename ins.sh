@@ -147,19 +147,19 @@ install_XrayR() {
 
     # --- 显式修复：确保这几个 JSON 文件一个都不能少 ---
     if [[ ! -f /etc/XrayR/dns.json ]]; then
-        cp dns.json /etc/XrayR/ 2>/dev/null
+        cp dns.json /etc/XrayR/ 
     fi
     if [[ ! -f /etc/XrayR/route.json ]]; then
-        cp route.json /etc/XrayR/ 2>/dev/null
+        cp route.json /etc/XrayR/ 
     fi
     if [[ ! -f /etc/XrayR/custom_outbound.json ]]; then
-        cp custom_outbound.json /etc/XrayR/ 2>/dev/null
+        cp custom_outbound.json /etc/XrayR/ 
     fi
     if [[ ! -f /etc/XrayR/custom_inbound.json ]]; then
-        cp custom_inbound.json /etc/XrayR/ 2>/dev/null
+        cp custom_inbound.json /etc/XrayR/ 
     fi
     if [[ ! -f /etc/XrayR/rulelist ]]; then
-        cp rulelist /etc/XrayR/ 2>/dev/null
+        cp rulelist /etc/XrayR/ 
     fi
     # ----------------------------------------------
 
