@@ -178,7 +178,7 @@ install_XrayR() {
     chmod +x /usr/bin/xrayr
 
     cd $cur_dir
-    rm -f install.sh
+    rm -f ins.sh
 
     echo -e "${green}XrayR ${last_version}${plain} 安装完成，已设置开机自启"
     echo -e ""
