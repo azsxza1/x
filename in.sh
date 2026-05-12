@@ -162,7 +162,7 @@ chmod +x /usr/bin/xrayr
 
     cd $cur_dir
     # 清理安装脚本（可选）
-    # rm -f install.sh
+     rm -f install.sh
 
     echo -e ""
     echo "XrayR 管理脚本使用方法 (兼容使用xrayr执行，大小写不敏感): "
